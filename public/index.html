@@ -7,13 +7,15 @@
         <script src="../src/index.js" type="module"></script>
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body class="bg-slate-300">
-        <div class="bg-slate-50 w-96 p-5 rounded shadow-l justify-center">
-            <form id="task-form">
-                <input type="text" id="input-text" placeholder="Enter a task" required class="p-2">
-                <button type="submit" class="border-double border-4 border-indigo-600 rounded p-1">Add Task</button>
+    <body class="bg-slate-300 min-h-screen flex items-center justify-center">
+        <div class="bg-slate-50 w-96 p-5 rounded-lg shadow-lg">
+            <h1 class="text-2xl font-bold mb-4 text-center">To-Do List</h1>
+            <form id="task-form" class="mb-4">
+                <input type="text" id="input-text" placeholder="Enter a task" required class="p-2 border border-gray-300 rounded w-full mb-2">
+                <button type="submit" class="w-full bg-indigo-600 text-white rounded p-2 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Add Task</button>
             </form>
-            <ul id="list" class=""></ul>
+            <ul id="list" class="list-disc pl-5 space-y-2">
+            </ul>
         </div>
     </body>
 </html>
