@@ -4,13 +4,16 @@
         <title>
             To-Do by TypeScript
         </title>
-        <script src="../src/index.ts" type="module"></script>
+        <script src="../src/index.js" type="module"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body>
-        <ul id="list"></ul>
-        <form id="task-form">
-            <input type="text">
-            <button type="submit">Add Task</button>
-        </form>
+    <body class="bg-slate-300">
+        <div class="bg-slate-50 w-96 p-5 rounded shadow-l justify-center">
+            <form id="task-form">
+                <input type="text" id="input-text" placeholder="Enter a task" required class="p-2">
+                <button type="submit" class="border-double border-4 border-indigo-600 rounded p-1">Add Task</button>
+            </form>
+            <ul id="list" class=""></ul>
+        </div>
     </body>
 </html>
